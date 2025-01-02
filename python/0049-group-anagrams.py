@@ -28,4 +28,4 @@ class Solution:
             for c in s:
                 count[ord(c) - ord("a")] += 1
             ans[tuple(count)].append(s)
-        return list(ans.values())
+        return [sorted(group) for group in anagrams_dict.values()]
